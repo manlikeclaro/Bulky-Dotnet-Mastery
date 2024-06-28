@@ -13,11 +13,29 @@ public class CategoryController : Controller
         _db = db;
     }
 
-    // GET
+    // [HttpGet]
     public IActionResult Index()
     {
-        // List<Category> objCategoryList = _db.Categories.ToList();
-        var objCategoryList = _db.Categories.ToList();
+        // var objCategoryList = _db.Categories.ToList();
+        List<Category> objCategoryList = _db.Categories.ToList();
         return View(objCategoryList);
+    }
+
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Category obj)
+    {
+        if (ModelState.IsValid)
+        {
+            _db.Categories.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction(actionName: "Index", controllerName: "Category");
+        }
+
+        return View();
     }
 }
