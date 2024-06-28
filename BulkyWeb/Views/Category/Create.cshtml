@@ -20,10 +20,16 @@
             @* <div class="mb-3"> *@
             @*     <span asp-validation-summary="ModelOnly" class="text-danger"></span> *@
             @* </div> *@
-            <button type="submit" class="btn btn-primary rounded">Create</button>
-            <a asp-controller="Category" asp-action="Index" class="btn btn-secondary rounded">
-                Back to Categories
-            </a>
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <button type="submit" class="btn btn-primary rounded form-control">Create</button>
+                </div>
+                <div class="col-6 col-md-4">
+                    <a asp-controller="Category" asp-action="Index" class="btn btn-outline-secondary rounded form-control">
+                        Back to Categories
+                    </a>
+                </div>
+            </div>
         </div>
     </form>
 </div>
