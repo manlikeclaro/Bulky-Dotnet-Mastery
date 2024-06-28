@@ -29,6 +29,13 @@ public class CategoryController : Controller
     [HttpPost]
     public IActionResult Create(Category obj)
     {
+        if (obj.Name == Convert.ToString(obj.DisplayOrder))
+        {
+            ModelState.AddModelError(
+                key: "Name",
+                errorMessage: "The Category Name can't be identical to Display Order");
+        }
+
         if (ModelState.IsValid)
         {
             _db.Categories.Add(obj);
