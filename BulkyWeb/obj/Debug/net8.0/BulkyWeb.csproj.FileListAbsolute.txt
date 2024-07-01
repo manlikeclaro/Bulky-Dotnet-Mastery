@@ -134,3 +134,4 @@ C:\Users\SoftClansUser\RiderProjects\Bulky\BulkyWeb\bin\Debug\net8.0\runtimes\wi
 C:\Users\SoftClansUser\RiderProjects\Bulky\BulkyWeb\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\SoftClansUser\RiderProjects\Bulky\BulkyWeb\obj\Debug\net8.0\BulkyWeb.csproj.AssemblyReference.cache
 C:\Users\SoftClansUser\RiderProjects\Bulky\BulkyWeb\obj\Debug\net8.0\BulkyWeb.csproj.Up2Date
+C:\Users\SoftClansUser\RiderProjects\Bulky\BulkyWeb\obj\Debug\net8.0\BulkyWeb.sourcelink.json
