@@ -1,9 +1,19 @@
 ﻿@if (TempData["Success"] != null)
 {
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript">
+        toastr.success("@TempData["Success"]");
+    </script>
     <h6 class="text-success ">@TempData["Success"]</h6>
 }
 
 @if (TempData["Error"] != null)
 {
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript">
+        toastr.error("@TempData["Error"]");
+    </script>
     <h6 class="text-danger ">@TempData["Error"]</h6>
 }
