@@ -1,7 +1,12 @@
-﻿@model List<Category>
+﻿@using System.Security.Cryptography
+@model List<Category>
 
 <div class="container">
     <div class="row pt-4 mb-4">
+        @if (TempData["Success"] != null)
+        {
+            <h6 class="text-success-emphasis ">@TempData["Success"]</h6>
+        }
         <div class="col-6">
             <h3 class="text-primary">Category List</h3>
         </div>
@@ -20,6 +25,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Display Order</th>
+                <th>Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -29,6 +35,18 @@
                     <td>@obj.Id</td>
                     <td>@obj.Name</td>
                     <td>@obj.DisplayOrder</td>
+                    <td>
+                        <span class="mx-1 btn btn-primary rounded">
+                            <a asp-controller="Category" asp-action="Edit" asp-route-Id="@obj.Id">
+                                <i class="bi bi-pencil text-light"></i>
+                            </a>
+                        </span>
+                        <span class="mx-1 btn btn-danger rounded">
+                            <a asp-controller="Category" asp-action="Delete" asp-route-Id="@obj.Id">
+                                <i class="bi bi-trash3 text-light"></i>
+                            </a>
+                        </span>
+                    </td>
                 </tr>
             }
             </tbody>
