@@ -109,7 +109,7 @@ public class CategoryController : Controller
         _db.Categories.Remove(obj);
         _db.SaveChanges();
 
-        TempData["Success"] = $"Category \"{obj.Name}\" was deleted successfully!";
+        TempData["Error"] = $"Category \"{obj.Name}\" was deleted successfully!";
         return RedirectToAction(actionName: "Index", controllerName: "Category");
     }
 }

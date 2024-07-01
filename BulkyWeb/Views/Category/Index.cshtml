@@ -3,10 +3,9 @@
 
 <div class="container">
     <div class="row pt-4 mb-4">
-        @if (TempData["Success"] != null)
-        {
-            <h6 class="text-success-emphasis ">@TempData["Success"]</h6>
-        }
+        <span class="mb-2">
+            <partial name="_Notification"></partial>
+        </span>
         <div class="col-6">
             <h3 class="text-primary">Category List</h3>
         </div>
