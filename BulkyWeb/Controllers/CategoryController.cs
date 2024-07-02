@@ -40,7 +40,7 @@ public class CategoryController : Controller
         {
             _db.Categories.Add(obj);
             _db.SaveChanges();
-            
+
             TempData["Success"] = $"Category \"{obj.Name}\" was created successfully!";
             return RedirectToAction(actionName: "Index", controllerName: "Category");
         }
@@ -72,7 +72,7 @@ public class CategoryController : Controller
         {
             _db.Categories.Update(obj);
             _db.SaveChanges();
-            
+
             TempData["Success"] = $"Category \"{obj.Name}\" was updated successfully!";
             return RedirectToAction(actionName: "Index", controllerName: "Category");
         }

@@ -2,12 +2,12 @@
 
 <div class="container">
 
-    <input asp-for="Id" hidden>
     <form action="" method="post">
         <div class="border p-3 mt-4">
             <div class="row pb-2">
                 <h2 class="text-primary">Edit Category</h2>
             </div>
+            <input asp-for="Id" hidden>
             <div class="mb-3">
                 <label asp-for="Name"></label>
                 <input asp-for="Name" class="form-control">
@@ -37,5 +37,5 @@
 
 @section Scripts
 {
-<partial name="_ValidationScriptsPartial"/>
+    <partial name="_ValidationScriptsPartial"/>
 }
