@@ -4,6 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyWeb", "BulkyWeb\BulkyW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyWebRazor", "BulkyWebRazor\BulkyWebRazor.csproj", "{BFE339C6-F151-4CBB-ABBC-D511E52FCD0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bulky.DataAccess", "Bulky.DataAccess\Bulky.DataAccess.csproj", "{2422A10A-B9BA-4ECC-A378-FE1B4ECB1E29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bulky.Models", "Bulky.Models\Bulky.Models.csproj", "{E827A777-9D8D-45BF-80B3-F07E83A4B5FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bulky.Utility", "Bulky.Utility\Bulky.Utility.csproj", "{6A810CEE-B08D-4FA2-B334-2D818389F9EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{BFE339C6-F151-4CBB-ABBC-D511E52FCD0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFE339C6-F151-4CBB-ABBC-D511E52FCD0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFE339C6-F151-4CBB-ABBC-D511E52FCD0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2422A10A-B9BA-4ECC-A378-FE1B4ECB1E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2422A10A-B9BA-4ECC-A378-FE1B4ECB1E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2422A10A-B9BA-4ECC-A378-FE1B4ECB1E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2422A10A-B9BA-4ECC-A378-FE1B4ECB1E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E827A777-9D8D-45BF-80B3-F07E83A4B5FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E827A777-9D8D-45BF-80B3-F07E83A4B5FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E827A777-9D8D-45BF-80B3-F07E83A4B5FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E827A777-9D8D-45BF-80B3-F07E83A4B5FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A810CEE-B08D-4FA2-B334-2D818389F9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A810CEE-B08D-4FA2-B334-2D818389F9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A810CEE-B08D-4FA2-B334-2D818389F9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A810CEE-B08D-4FA2-B334-2D818389F9EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
