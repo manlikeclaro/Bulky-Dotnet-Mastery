@@ -1,1 +1,3 @@
-﻿
+﻿# Ignore language detection 
+*.css linguist-language=none
+*.html linguist-language=none

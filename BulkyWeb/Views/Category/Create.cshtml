@@ -1,25 +1,27 @@
 ﻿@model Category
 
 <div class="container">
-
     <form action="" method="post">
         <div class="border p-3 mt-4">
             <div class="row pb-2">
                 <h2 class="text-primary">Create Category</h2>
             </div>
+
+            <!-- Input for Category Name -->
             <div class="mb-3">
                 <label asp-for="Name"></label>
                 <input asp-for="Name" class="form-control">
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
+
+            <!-- Input for Display Order -->
             <div class="mb-3">
                 <label asp-for="DisplayOrder"></label>
                 <input asp-for="DisplayOrder" class="form-control">
                 <span asp-validation-for="DisplayOrder" class="text-danger"></span>
             </div>
-            @* <div class="mb-3"> *@
-            @*     <span asp-validation-summary="ModelOnly" class="text-danger"></span> *@
-            @* </div> *@
+
+            <!-- Form action buttons -->
             <div class="row">
                 <div class="col-6 col-md-4">
                     <button type="submit" class="btn btn-primary rounded form-control">Create</button>
@@ -33,6 +35,8 @@
         </div>
     </form>
 </div>
+
+<!-- Validation scripts -->
 
 @section Scripts
 {

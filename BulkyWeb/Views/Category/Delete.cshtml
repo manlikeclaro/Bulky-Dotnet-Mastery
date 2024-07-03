@@ -1,21 +1,27 @@
 ﻿@model Category
 
 <div class="container">
-
-    <input asp-for="Id" hidden>
     <form action="" method="post">
         <div class="border p-3 mt-4">
             <div class="row pb-2">
                 <h2 class="text-primary">Delete Category</h2>
             </div>
+            <!-- Hidden input to hold the ID of the category -->
+            <input asp-for="Id" hidden>
+
+            <!-- Disabled input for Category Name -->
             <div class="mb-3">
                 <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control " disabled>
+                <input asp-for="Name" class="form-control" disabled>
             </div>
+
+            <!-- Disabled input for Display Order -->
             <div class="mb-3">
                 <label asp-for="DisplayOrder"></label>
-                <input asp-for="DisplayOrder" class="form-control " disabled>
+                <input asp-for="DisplayOrder" class="form-control" disabled>
             </div>
+
+            <!-- Form action buttons -->
             <div class="row">
                 <div class="col-6 col-md-4">
                     <button type="submit" class="btn btn-danger rounded form-control">Delete</button>
